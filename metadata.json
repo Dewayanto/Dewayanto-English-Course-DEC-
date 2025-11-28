@@ -1,6 +1,6 @@
 {
-  "name": "ECHO: AI English Tutor",
-  "description": "A dedicated, conversational English language tutor that adapts its language complexity, feedback style, and conversational topics based on the student's selected proficiency level.",
+  "name": "DEWAYANTO COURSE",
+  "description": "A dedicated, conversational English language tutor, DEWA, from DEWAYANTO COURSE that adapts its language complexity, feedback style, and conversational topics based on the student's selected proficiency level.",
   "requestFramePermissions": [
     "microphone"
   ]

@@ -1,4 +1,3 @@
-
 export enum ProficiencyLevel {
   Beginner = 'Beginner',
   Intermediate = 'Intermediate',
@@ -6,7 +5,7 @@ export enum ProficiencyLevel {
 }
 
 export type Message = {
-  sender: 'user' | 'echo';
+  sender: 'user' | 'dewa';
   text: string;
 };
 

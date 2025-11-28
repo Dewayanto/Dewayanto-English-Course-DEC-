@@ -1,4 +1,3 @@
-
 import { GoogleGenAI, Modality, type LiveSession, type LiveServerMessage, type Blob } from '@google/genai';
 import { encode } from '../utils/audioUtils';
 
@@ -108,7 +107,7 @@ export async function startEchoSession({ systemInstruction, callbacks }: StartEc
     config: {
       responseModalities: [Modality.AUDIO],
       speechConfig: {
-        voiceConfig: { prebuiltVoiceConfig: { voiceName: 'Zephyr' } },
+        voiceConfig: { prebuiltVoiceConfig: { voiceName: 'Puck' } },
       },
       inputAudioTranscription: {},
       outputAudioTranscription: {},

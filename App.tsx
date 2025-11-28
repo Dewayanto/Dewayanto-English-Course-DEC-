@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { ProficiencyLevel, Message, AgentStatus } from './types';
 import { SYSTEM_PROMPTS } from './constants';
@@ -40,7 +39,7 @@ export default function App() {
     setLevel(selectedLevel);
     setStatus(AgentStatus.IDLE);
     setTranscript([
-      { sender: 'echo', text: "Hello! Welcome to your English practice session. I'm ECHO. Ready to start? Click the microphone button below." }
+      { sender: 'dewa', text: "Hello! Welcome to your English practice session. I'm DEWA. Ready to start? Click the microphone button below." }
     ]);
   };
 
@@ -67,12 +66,12 @@ export default function App() {
 
        setTranscript(prev => {
         const lastMessage = prev[prev.length - 1];
-        if (lastMessage?.sender === 'echo') {
+        if (lastMessage?.sender === 'dewa') {
           const newTranscript = [...prev];
           newTranscript[newTranscript.length - 1] = { ...lastMessage, text: currentOutputTranscriptionRef.current };
           return newTranscript;
         }
-        return [...prev, { sender: 'echo', text: currentOutputTranscriptionRef.current }];
+        return [...prev, { sender: 'dewa', text: currentOutputTranscriptionRef.current }];
       });
     }
 
@@ -179,7 +178,7 @@ export default function App() {
     <div className="min-h-screen bg-gray-900 flex flex-col items-center justify-center font-sans p-4">
       <div className="w-full max-w-2xl h-[90vh] bg-gray-800 rounded-2xl shadow-2xl flex flex-col">
         <header className="p-4 border-b border-gray-700 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-cyan-400">ECHO</h1>
+          <h1 className="text-2xl font-bold text-cyan-400">DEWAYANTO COURSE</h1>
           <div className="text-sm text-gray-400">
             {level ? `Level: ${level}` : 'AI English Tutor'}
           </div>

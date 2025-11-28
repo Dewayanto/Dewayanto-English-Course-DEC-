@@ -1,8 +1,7 @@
-
 import React from 'react';
 
 interface MessageProps {
-  sender: 'user' | 'echo';
+  sender: 'user' | 'dewa';
   text: string;
 }
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { AgentStatus } from '../types';
 
@@ -25,7 +24,7 @@ const StatusIndicator: React.FC<StatusIndicatorProps> = ({ status, error }) => {
       dotClass = 'bg-green-500 animate-pulse';
       break;
     case AgentStatus.SPEAKING:
-      statusText = "ECHO is speaking...";
+      statusText = "DEWA is speaking...";
       dotClass = 'bg-cyan-500 animate-pulse';
       break;
     case AgentStatus.ERROR:
